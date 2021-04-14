@@ -1,0 +1,10 @@
+y = m*x+a
+error = Yreal - y
+error2 =error**2
+S = sum(error2)
+Sa = sum(-2*error)
+Sm = sum(-2*x*error)
+step_sizea = Sa*ia
+step_sizem = Sm*im
+m = m - step_sizem
+a = step_sizea
